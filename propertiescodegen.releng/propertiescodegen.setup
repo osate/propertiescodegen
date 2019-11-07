@@ -27,7 +27,7 @@
   <setupTask
       xsi:type="setup.p2:P2Task">
     <requirement
-        name="org.jetbrains.kotlin.feature"/>
+        name="org.jetbrains.kotlin.feature.feature.group"/>
     <repository
         url="https://dl.bintray.com/jetbrains/kotlin/eclipse-plugin/last/"/>
     <description>Install the tools needed in the IDE to work with the source code for ${scope.project.label}</description>
