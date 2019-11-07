@@ -26,6 +26,10 @@
       storageURI="scope://Workspace"/>
   <setupTask
       xsi:type="setup.p2:P2Task">
+    <requirement
+        name="org.jetbrains.kotlin.feature"/>
+    <repository
+        url="https://dl.bintray.com/jetbrains/kotlin/eclipse-plugin/last/"/>
     <description>Install the tools needed in the IDE to work with the source code for ${scope.project.label}</description>
   </setupTask>
   <setupTask
@@ -35,15 +39,10 @@
         activeRepositoryList="${eclipse.target.platform}">
       <requirement
           name="*"/>
-      <requirement
-          name="org.jetbrains.kotlin.feature"/>
       <sourceLocator
           rootFolder="${git.clone.propertiescodegen.location}"/>
       <repositoryList
-          name="2019-09">
-        <repository
-            url="https://dl.bintray.com/jetbrains/kotlin/eclipse-plugin/last/"/>
-      </repositoryList>
+          name="2019-09"/>
       <repositoryList
           name="2019-03">
         <repository
